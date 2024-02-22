@@ -5,12 +5,16 @@
 //let inventory = require('./data')
 
 function findOutCarWithId(data,id){
-    for(let i=0;i<data.length;i++){
-        if(data[i].id === id){
-            return data[i]
+    let carid =""
+     data.forEach((element)=>{
+        if(element.id === id){
+           carid= element
         }
+     });
+     return carid;
+    
     }
-}
+
 //let result = findOutCarWithId(inventory,33);
 //console.log(`car 33 is a ${result.car_year}  ${result.car_make}  ${result.car_model}`)
 
