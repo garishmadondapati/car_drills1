@@ -12,5 +12,4 @@ function findOutCarWithId(data,id){
     }
 }
 let result = findOutCarWithId(inventory,33);
-console.log(result)
 console.log(`car 33 is a ${result.car_year}  ${result.car_make}  ${result.car_model}`)
