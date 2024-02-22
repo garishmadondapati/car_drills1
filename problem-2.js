@@ -11,5 +11,4 @@ function findOutLastCarInTheData(data){
 }
 
 let carResult = findOutLastCarInTheData(inventory)
-console.log(carResult)
 console.log(`Last car is a ${carResult.car_make} ${carResult.car_model}`)
