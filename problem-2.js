@@ -3,14 +3,19 @@
 "Last car is a *car make goes here* *car model goes here*"
 
 
-//let inventory = require('./data')
+let inventory = require('./data')
 
 function findOutLastCarInTheData(data){
-    let lastCar = data[data.length -1]
-       return lastCar;
+    let result = data.find((element)=>{
+        if(element.id === data.length){
+            return `Last car is a ${element.car_make} ${element.car_model}`
+        }
+    });
+
+    return result;
 }
 
-//let carResult = findOutLastCarInTheData(inventory)
-//console.log(`Last car is a ${carResult.car_make} ${carResult.car_model}`)
+console.log( findOutLastCarInTheData(inventory))
+
 
 module.exports = findOutLastCarInTheData
